@@ -36,12 +36,12 @@ public class DebtProcessor {
                 .peek((key,value) -> mailService.sendEmail(value));
     }
 
-    private KeyValue<String, DebtEmail> convertToMail(String key, Debt debt) {
+    public KeyValue<String, DebtEmail> convertToMail(String key, Debt debt) {
         DebtEmail email = DebtEmail.convert(debt);
         return new KeyValue<>(key, email);
     }
 
-    private boolean filterEmailCompatibleDebts(String key, Debt debt) {
+    public boolean filterEmailCompatibleDebts(String key, Debt debt) {
         return debt.getStatus().equals(DebtStatus.CLOSED);
     }
 }

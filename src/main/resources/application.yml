@@ -6,8 +6,8 @@ spring:
   mail:
     host: "smtp.gmail.com"
     port: "587"
-    username: "vin.felipes@gmail.com"
-    password: "nfax nudu rimo hstd"
+    username: "bancobacana123@gmail.com"
+    password: "drxd eohp ozco gtkf"
     properties:
       mail:
         smtp:
